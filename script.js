@@ -33,3 +33,22 @@ newarr = Object.entries(obj).map(entry=>{
 console.log(newarr);
 
 console.log([1,[3,4,[5,6,[7]]]].flat(100))
+
+// nullish coaelescing operator
+let my_poc = {
+  pika: {
+    species: "mouse",
+    power:""
+  }
+}
+let power = my_poc?.pika?.power || "no power"
+console.log(power) //no power executes if falsy value (false, "", 0, null, undefined)
+
+let my_poc2 = {
+  pika: {
+    species: "mouse",
+    power: 0
+  }
+}
+let power2 = my_poc2?.pika?.power ?? "no power"
+console.log(power2) //no power executes only if power is null or undefined
