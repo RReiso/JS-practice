@@ -52,3 +52,5 @@ let my_poc2 = {
 }
 let power2 = my_poc2?.pika?.power ?? "no power"
 console.log(power2) //no power executes only if power is null or undefined
+
+console.log("HH")
